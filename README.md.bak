@@ -51,6 +51,3 @@ Once done, click "special" again and "Stop recording sound", wait a few seconds 
 When you record a VGM file, you physically record the instructions sent to the emulated BBC sound chip, these are the exact same instructions that the real SN76489 also understands, and obeys to make sounds.  If you download a copy of the BBC Advanced User GUide, it has an entire chapter on writing these instructions on an actual BBC Micro direct to the real chip in a BBC Micro (One of the first ever 6502 Machine Code Programs I wrote on a BBC all those years ago was a direct hardware music player), the VGM file is a standard emulator format used by a number of different emulators for recording this chip level music data containing chip commands.
 
 The PC Player is in actual fact a mini VGM format file player, but it only looks at and uses the parts that are specific to the BBC Micro or SN76489 chip.  The SN chip was added to the spec as it was used in a number of consoles in the 1990's, the most famous of wich was the Sega Mega Drive, so it suits our purposes perfectly.
-
-#### Still To Do.....
-* Actual circuit diagrams and drawings
