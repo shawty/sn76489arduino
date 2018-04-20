@@ -56,5 +56,3 @@ When you record a VGM file, you physically record the instructions sent to the e
 
 The PC Player is in actual fact a mini VGM format file player, but it only looks at and uses the parts that are specific to the BBC Micro or SN76489 chip.  The SN chip was added to the spec as it was used in a number of consoles in the 1990's, the most famous of wich was the Sega Mega Drive, so it suits our purposes perfectly.
 
-#### Still To Do.....
-* Actual circuit diagrams and drawings
