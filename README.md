@@ -40,19 +40,19 @@ Once these 2 changes are correct, and you dotnet run the app, then assuming your
 ### How I created the VGM files......
 Quite easily as it happens.
 
-Make sure you have Tom Sneddons "model-b" BBC Micro Emulator installed ( http://archive.retro-kit.co.uk/bbc.nvg.org/emulators.php3.html#Model-B ) it has to be this specific emulator as this is the only one I can find that records VGA, rather than recording the wave audio output which is what all the others do.
+Make sure you have Tom Sneddons "model-b" BBC Micro Emulator installed ( http://archive.retro-kit.co.uk/bbc.nvg.org/emulators.php3.html#Model-B ) it has to be this specific emulator as this is the only one I can find that records VGM, rather than recording the wave audio output which is what all the others do.
 
 Once you have the emulator running, click "special" on the menu bar, then "Start Recording Sound", run the program who's music you want to record and let it play util you record everything you want to record.
 
 Once done, click "special" again and "Stop recording sound", wait a few seconds and the emulator will ask you where you want to save the VGM file.
 
-Iv'e provided a bunch of VGM test files that I recorded from the emulator in the "Example VGM Tunes" folder, please be aware though that some of them are well, awfull :-)  SImply beacuse some of them used some rather bizare tricks to try and get things like argeggios and complex harmonies going (Every trick in Ian Waughs excelent - "Making music on the BBC Micro Computer" book basically) and the emulator bless it's little socks did try to record things as faithfully as it could, but just didn't manage to get a good quality grab for some of them.  I'm sure with patience and time I'll be able to make some better ones.
+Iv'e provided a bunch of VGM test files that I recorded from the emulator in the "Example VGM Tunes" folder, please be aware though that some of them are well, awfull :-)  Simply beacuse some of them used some rather bizare tricks to try and get things like argeggios and complex harmonies going (Every trick in Ian Waughs excelent - "Making music on the BBC Micro Computer" book basically) and the emulator bless it's little socks did try to record things as faithfully as it could, but just didn't manage to get a good quality grab for some of them.  I'm sure with patience and time I'll be able to make some better ones.
 
 You'll also find the soundtrack to my multipart BBC Model B demo "DreamScape" ( https://www.youtube.com/watch?v=_mrOAB4UBcM ) in there too, and that plays rather quite well :-)
 
 **Why a VGM file**
 
-When you record a VGM file, you physically record the instructions sent to the emulated BBC sound chip, these are the exact same instructions that the real SN76489 also understands, and obeys to make sounds.  If you download a copy of the BBC Advanced User GUide, it has an entire chapter on writing these instructions on an actual BBC Micro direct to the real chip in a BBC Micro (One of the first ever 6502 Machine Code Programs I wrote on a BBC all those years ago was a direct hardware music player), the VGM file is a standard emulator format used by a number of different emulators for recording this chip level music data containing chip commands.
+When you record a VGM file, you physically record the instructions sent to the emulated BBC sound chip, these are the exact same instructions that the real SN76489 also understands, and obeys to make sounds.  If you download a copy of the BBC Advanced User Guide, it has an entire chapter on writing these instructions on an actual BBC Micro direct to the real chip in a BBC Micro (One of the first ever 6502 Machine Code Programs I wrote on a BBC all those years ago was a direct hardware music player), the VGM file is a standard emulator format used by a number of different emulators for recording this chip level music data containing chip commands.
 
 The PC Player is in actual fact a mini VGM format file player, but it only looks at and uses the parts that are specific to the BBC Micro or SN76489 chip.  The SN chip was added to the spec as it was used in a number of consoles in the 1990's, the most famous of wich was the Sega Mega Drive, so it suits our purposes perfectly.
 
