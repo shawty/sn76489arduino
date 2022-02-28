@@ -1,0 +1,10 @@
+ void setupFourMhzTimer()
+{
+  // Iv'e no idea how this works :-)  I grabbed it off the arduino forums
+  // I made an attempt to understand it, but every tweak I made I killed it!!!
+  // it works, it gives 4Mhz, so I'm just leaving it at that.
+  pinMode(CLOCK, OUTPUT);
+  TCCR2A = 0x23;// timer control configuration register А
+  TCCR2B = 0x09; //timer control configuration register B
+  OCR2A = 3;  //7; //2mhz  //5;//2.67mhz    //4; //3.2mhz   //3; //4mhz  //8; //1.78mhz //I left this one - 4mhz ///comparison register A
+  OCR2B = 1;  //3; //      //1;             //1; //40:60    //1; //50:50 //3;   //duty+46%/-54% } ///comparison register B
